@@ -6,8 +6,14 @@ output:
     highlight: github
 ---
 
-```{r}
+```{r, echo = F}
 dados=read.csv(file="http://bit.ly/bancodedadosCorreios", encoding = "UTF-8")
+```
+
+ 
+
+```{r, eval  = F}
+dados=read.csv(file="base_de_dados_em_sigilo", encoding = "UTF-8")
 ```
 
 ```{r message=FALSE, warning=FALSE}
