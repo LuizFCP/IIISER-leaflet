@@ -10,8 +10,6 @@ output:
 dados=read.csv(file="http://bit.ly/bancodedadosCorreios", encoding = "UTF-8")
 ```
 
- 
-
 ```{r, eval  = F}
 dados=read.csv(file="base_de_dados_em_sigilo", encoding = "UTF-8")
 ```
@@ -41,5 +39,4 @@ icons <- awesomeIcons(
 
 leaflet(dados) %>% addTiles() %>%
   addAwesomeMarkers(dados$Longitude/10^6, dados$Latitude/10^6, icon=icons, label=~as.character(ano))
-
 ```
