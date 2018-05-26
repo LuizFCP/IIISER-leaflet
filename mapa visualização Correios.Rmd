@@ -1,13 +1,15 @@
 ---
 title: "Mapa dos assaltos ao Serviço Postal"
+date: "`r format(Sys.Date(),'%d/%m/%Y')`"
 output:
   prettydoc::html_pretty:
-    theme: cayman
+    theme: architect
     highlight: github
 ---
 
+Banco de dados não disponível, pois os dados são confidenciais da Polícia Federal
 ```{r, echo = F}
-dados=read.csv(file="http://bit.ly/bancodedadosCorreios", encoding = "UTF-8")
+dados=read.csv(file="...", encoding = "UTF-8")
 ```
 
 ```{r, eval  = F}
@@ -17,8 +19,8 @@ dados=read.csv(file="base_de_dados_em_sigilo", encoding = "UTF-8")
 ```{r message=FALSE, warning=FALSE}
 library(leaflet)
 
-getColor <- function(dados) {
-  sapply(dados$ano, function(ano) {
+getColor <- function(dados) { #entrar com os dados para utilizar a coluna ano (dados$ano) no sapply
+  sapply(dados$ano, function(ano) { #por padrão, vetoriza
   if(ano == 2013) {
     "blue"
   } else if(ano == 2014) {
