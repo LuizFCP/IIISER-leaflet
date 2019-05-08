@@ -1,4 +1,4 @@
-### Visualização em Mapas de Assaltos à Encomendas do Serviço Postal no Leste da Região Metropolitana Fluminense <img src="man/figures/sticker.png" align="right" />
+## Visualização em Mapas de Assaltos à Encomendas do Serviço Postal no Leste da Região Metropolitana Fluminense <img src="man/figures/sticker.png" align="right" />
 
 Trabalho apresentado no III Seminário Internacional de Estatística com R na categoria Resumo simples - **Sessão Pôster**.
 
